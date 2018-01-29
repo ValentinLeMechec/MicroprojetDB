@@ -56,8 +56,8 @@ echo $volume;
 echo $prixProduit;
 echo $nomProduit
 
-$Query = "INSERT INTO PROJET1_Produit (`nomProduit,sellPriceEuro`,`itemCode`,`volumeProduit` ) VALUES ('$nomProduit','$codeItem','$prixProduit','$volume')";
-$Result = $Connect->query($Query);
+//$Query = "INSERT INTO PROJET1_Produit (`nomProduit,sellPriceEuro`,`itemCode`,`volumeProduit` ) VALUES ('$nomProduit','$codeItem','$prixProduit','$volume')";
+//$Result = $Connect->query($Query);
 }
 
 
