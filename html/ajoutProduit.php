@@ -11,7 +11,7 @@
 	
   <ul id="onglets">
 
-    <li><a href="../index.html"> Accueil </a></li>
+    <li><a href="index.html"> Accueil </a></li>
 
     <li><a class="active" href="client.html"> Client  </a></li>
 
