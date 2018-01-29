@@ -1,12 +1,18 @@
 <!doctype html>
 <html lang="fr">
 <head>
+
+<div id="page">
+<img src="entete1.png">
+
+</div>
+
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="javascript/script.js"></script>
 </head>
-<body>
+<body id="fond">
   <div id="menu"> <!--div permet juste d'organiser le contenu-->
 	
   <ul id="onglets">
@@ -22,7 +28,48 @@
 	
 </ul>
   <!-- Le reste du contenu -->
-  <h1>Le plus beau des sites web pour gérer une base de donnees</h1>
+  
+  <form  method="post" action="http://e-srvlamp/s141042/AjoutClient.php" id="page" >
+					
+					<td class = "col1">
+						<p></br>Nom * :</p>
+						<input class="champs" id="nom" name = "nom" required type="text" size="25">
+						<p>Prénom * :</p>
+						<input class="champs" id="prénom" name = "prenom" required type="text" size="25">
+						<p>Date de naissance * :</p>
+						<input class="champs" id="jour" name = "jour" required type="date" size="4">
+						<br />
+						
+						<p>Sexe *:</p>
+						<input class="champs" id="sexe" name = "sexe" required type="text" size="1">
+						
+						<p>Mail *:</p>
+						<input class="champs" id="mail" name = "mail" required type="text" size="100">
+						
+						<p>Téléphone Fixe *:</p>
+						<input class="champs" id="tf" name = "tf" required type="text" size="10">
+						
+						<p>Téléphone Portable *:</p>
+						<input class="champs" id="tp" name = "tp" required type="text" size="10">
+						
+						<p>Votre pseudo *:</p>
+						<input class="champs" type="text" name="pseudo" id="pseudo" required size="25" />
+						<br />
+						<p>Votre mot de passe *:</p>
+						<input class="champs" type="password" name="pass" id="pass" required size="25" />
+						<br />
+						<br />
+						<br />
+					
+						
+						<input class="champs" type = "submit" value = "Valider" name = "Envoyer">
+						<input class="champs" type = "submit" value = "Reset" name = "Reset" onclick = "reset()">
+						<br /><br /><br />
+					</td>
+					
+					</form>
+  
+  
   </div>
 </body>
 </html>
