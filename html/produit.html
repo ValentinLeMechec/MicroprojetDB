@@ -25,16 +25,21 @@
   <h1>Ajouter des produits à la base de donnée !!!!!! </h1>
   </div>
   
-  <form method="post"  action= "http://e-srvlamp/s141042/produitAjoute.php"  >
+  <form method="post"  action= "http://e-srvlamp/s141042/ajoutProduit.php"  >
 	<p>Nom produit </p>
    <p><input type="text" name="nomProduit" /></p>
    
    <p>Prix</p>
-   <p><input type="number" name="prixProduit" /></p>
+   <p><input type="text" name="prixProduit" /></p>
    
    <p>Code item </p>
    <p><input type="text" name="codeItem" /></p>
-    <input type="submit" value="Envoyer">
+	
+	<p>Volume </p>
+   <p><input type="float" name="volume" /></p>
+   <input type="submit" value="Envoyer">
+
+
 
 </form>
   

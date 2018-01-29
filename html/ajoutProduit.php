@@ -41,15 +41,14 @@ if (!$Connect){
 	echo "Connexion à la base impossible";
 }
 if (count($_POST) != 0){
-$nom = $_POST["quantite"];
-$nom =  $_POST["nom"];
-$type = $_POST["type"];
-$activite  = $_POST["activite"];
-$image = $_POST["image"];
-$description = $_POST["description"];
-$age = $_POST["age"];
 
-$Query = "INSERT INTO PROJET1_Produit VALUES ('$nom','$activite','$type','$age','$image', '$description','$quantite')";
+$nomProduit =  $_POST["nomProduit"];
+$codeItem = $_POST["codeItem"];
+$prixProduit = $_POST["prixProduit"];
+$volume = $_POST["volume"];
+$prixDollar = $prixProduit * "SELECT valeur FROM PROJET1_Devise WHERE nDevise = 'Dollar' ";
+echo $prixDollar;
+$Query = "INSERT INTO PROJET1_Produit (`nomProduit,sellPriceEuro`,`itemCode`,`volumeProduit` ) VALUES ('$nomProduit','$codeItem','$prixProduit','$volume')";
 $Result = $Connect->query($Query);
 }
 
