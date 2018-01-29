@@ -37,6 +37,8 @@
 						<input class="champs" id="dollar" name = "dollar" required type="text" size="25">
 						<p>Valeur en Livre :</p>
 						<input class="champs" id="livre" name = "livre" required type="text" size="25">
+						</br>
+						</br>
 						<input class="champs" type = "submit" value = "Valider" name = "Envoyer">
 						<input class="champs" type = "submit" value = "Reset" name = "Reset" onclick = "reset()">
 					</td>
