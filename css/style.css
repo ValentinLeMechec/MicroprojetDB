@@ -43,7 +43,7 @@
 
     background-color: #444C4B;
 	
-	color: #F0FFFF;
+	color: #00FE08;
 	
 
 }
@@ -66,3 +66,36 @@
     background : #A5AFA6;
 
 }
+
+
+input.champs {
+height: 30px; /* Hauteur des champs */
+width: 270px; /* Longueur des champs */
+border: 1; /* Epaisseur de la bordure s'il y a lieu */
+border-color: #444C4B; /* Couleur de la bordure s'il y a lieu */
+background: #ffffff; /* Couleur du fond du champ */
+font-family: 15px Batang, Calibri , sans-serif; /* Police utilisé pour les champs remplis par l'utilisateur */
+font-size: 20px; /* Taille de la police */
+color:#444C4B; /* Couleur de la police */
+text-align: center ;
+}
+
+#page{
+	text-align: center ;
+	font :  20px Batang, Calibri , sans-serif, bold;
+	color: black;
+	font-size: 20;
+	border: 1px solid #444C4B ;
+	width: 840px ;
+	margin: 0 auto ;
+}
+
+ #fond{
+	
+	 background-color: #A9A9A9;
+	margin: 10px 0 ;
+	padding: 0 ;
+	
+	font: 0.8em "Trebuchet MS", helvetica, sans-serif ;
+	
+ }
