@@ -1,18 +1,17 @@
 <!doctype html>
 <html lang="fr">
 <head>
-
-<div id="page">
-<img src="entete1.png">
-
-</div>
-
-  <meta charset="utf-8">
+ <meta charset="utf-8">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
   <script src="javascript/script.js"></script>
 </head>
+
 <body id="fond">
+
+<div id="page">
+<img src="entete.jpg" width="840px" height="200px">
+</div>
   <div id="menu"> <!--div permet juste d'organiser le contenu-->
 	
   <ul id="onglets">
@@ -21,7 +20,7 @@
 
     <li><a  href="client.html"> Client  </a></li>
 
-    <li><a  href="vendeur.php" > Vendeur</a></li>
+    <li><a id="active" href="vendeur.php" > Vendeur</a></li>
 
     <li><a href="produit.html"> Produit </a></li>
 	
@@ -41,6 +40,8 @@
 						</br>
 						<input class="champs" type = "submit" value = "Valider" name = "Envoyer">
 						<input class="champs" type = "submit" value = "Reset" name = "Reset" onclick = "reset()">
+						</br>
+						</br>
 					</td>
 					
 					

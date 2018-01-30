@@ -3,16 +3,12 @@
 
     font :  25px Batang, Calibri , sans-serif;
 	
-	
     list-style-type : none;
-
+	width:auto;
     padding-bottom : 45px; /* à modifier suivant la taille de la police ET de la hauteur de l'onglet dans #onglets li */
-
     border-bottom : 2px solid #444C4B;
-
-  
-	
-
+	margin-left:37.5%;
+	margin-right:38%;
 }
 
 
@@ -24,11 +20,9 @@
 
     background-color: #444C4B;
     
-
-    margin : 4px 4px 0 4px !important;  /* Pour les navigateurs autre que IE */
 	
-
-   
+    margin : 4px 4px 0 4px !important;  /* Pour les navigateurs autre que IE */
+	 
 
     border : 1px solid #9EA0A1;
 	
@@ -37,13 +31,13 @@
 
 
 
-#onglets li.active{
+#active{
 
     border-bottom: 1px solid #fff;
 
-    background-color: #444C4B;
+    background-color: #C0C0C0;
 	
-	color: #00FE08;
+	
 	
 
 }
@@ -83,16 +77,19 @@ text-align: center ;
 #page{
 	text-align: center ;
 	font :  20px Batang, Calibri , sans-serif, bold;
-	color: black;
+	color: white;
 	font-size: 20;
 	border: 1px solid #444C4B ;
 	width: 840px ;
 	margin: 0 auto ;
+	background-color:#444C4B;
+
 }
 
  #fond{
 	
-	 background-color: #A9A9A9;
+	/* background-color: #A9A9A9;*/
+	background-image: url("fond.png");
 	margin: 10px 0 ;
 	padding: 0 ;
 	

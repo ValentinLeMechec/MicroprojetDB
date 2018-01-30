@@ -7,6 +7,10 @@
   <script src="javascript/script.js"></script>
 </head>
 <body id="fond">
+<div id="page">
+<img src="entete.jpg" width="840px" height="200px">
+</div>
+
   <div id="menu"> <!--div permet juste d'organiser le contenu-->
 	
   <ul id="onglets">
@@ -17,15 +21,17 @@
 
     <li><a  href="vendeur.php" > Vendeur</a></li>
 
-    <li><a href="produit.html"> Produit </a></li>
+    <li><a id="active" href="produit.html"> Produit </a></li>
 	
 	
 </ul>
   <!-- Le reste du contenu -->
-  <h1>Ajouter des produits à la base de donnée !!!!!! </h1>
+  
   </div>
   
   <form method="post"  action= "http://e-srvlamp/s141042/ajoutProduit.php" id="page" >
+  <h1>Ajouter des produits à la base de donnée </h1>
+  
 	<p>Nom produit </p>
    <p><input type="text" name="nomProduit" /></p>
    

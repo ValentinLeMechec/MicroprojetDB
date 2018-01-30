@@ -3,24 +3,32 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="javascript/script.js"></script>
 </head>
 <body id="fond">
+<div id="page">
+<img src="entete.jpg" width="840px" height="200px">
+</div>
+
   <div id="menu"> <!--div permet juste d'organiser le contenu-->
 	
   <ul id="onglets">
 
-    <li><a href="../index.html"> Accueil </a></li>
+    <li><a href="index.html"> Accueil </a></li>
 
-    <li><a class="active" href="client.html"> Client  </a></li>
+    <li><a id="active" href="client.html"> Client  </a></li>
 
-    <li><a  href="" > Vendeur</a></li>
+    <li><a  href="vendeur.php" > Vendeur</a></li>
 
-    <li><a href=""> Produit </a></li>
+    <li><a href="produit.html"> Produit </a></li>
 	
 	
-</ul><?php
+</ul>
+</div>
+<div id="page">
+
+<?php
 	if(count($_POST) !=0){
 		
 			//Variable programme
@@ -78,4 +86,6 @@ while($Data = mysqli_fetch_array($Result) ){
 	
 	
 ?>
+</div>
+</body>
 </html>
