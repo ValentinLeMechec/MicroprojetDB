@@ -37,6 +37,7 @@
 			$sexe = $_POST["sexe"];
 			$datenaissance = $_POST["jour"];
 			$tp = $_POST["tp"];
+			$adresse = $_POST["adresse"];
 			$tf = $_POST["tf"];
 			$mail = $_POST["mail"];
 			$pseudo = $_POST["pseudo"];
@@ -58,7 +59,7 @@
 			
 			//Insertion des élément dans la table
 			$Query = "INSERT INTO `PROJET1_Client`(`Pseudo`, `MDP`, `nom`, `prenom`, `sexe`, `dateNaissance`, `adresse`, `mail`, `nTelephoneFixe`, `nTelephonePortable`, `pointFideliteActuel`, `pointFideliteTotal`)
-			VALUES('$pseudo', '$pass', '$nom','$prenom','$sexe','$datenaissance','rue du porc','$mail', '$tf', '$tp', '0', '0')";
+			VALUES('$pseudo', '$pass', '$nom','$prenom','$sexe','$datenaissance','$adresse','$mail', '$tf', '$tp', '0', '0')";
 			$Result = $Connect->query($Query);
 			
 			if($Result!=null){
@@ -75,7 +76,7 @@
 
 			echo "</br>";
 
-			echo "Liste des clients inscrit ";
+			echo "Liste des clients inscrits: ";
 while($Data = mysqli_fetch_array($Result) ){	
 		echo "</br>";
 		echo $Data[0]; 
