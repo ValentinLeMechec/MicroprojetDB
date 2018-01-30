@@ -61,10 +61,21 @@
 		else{
 			echo "Toutes les cases du formulaire ne sont pas remplies<br/><br/>";
 		}
-	
+		/* recupere le nom des clients */
+			$Query="SELECT Pseudo FROM PROJET1_Client";
+			$Result = $Connect->query($Query);
+
+			echo "</br>";
+
+			echo "Liste des clients inscrit ";
+while($Data = mysqli_fetch_array($Result) ){	
+		echo "</br>";
+		echo $Data[0]; 
+		
+
+}
 	mysqli_close($Connect);
 	
 	
 ?>
-</body>
 </html>

@@ -3,21 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="javascript/script.js"></script>
 </head>
-<body>
+<body id="fond">
   <div id="menu"> <!--div permet juste d'organiser le contenu-->
 	
   <ul id="onglets">
 
-    <li><a href="../index.html"> Accueil </a></li>
+    <li><a href="index.html"> Accueil </a></li>
 
     <li><a class="active" href="client.html"> Client  </a></li>
 
-    <li><a  href="" > Vendeur</a></li>
+    <li><a  href="vendeur.php" > Vendeur</a></li>
 
-    <li><a href=""> Produit </a></li>
+    <li><a href="produit.html"> Produit </a></li>
 	
 	
 </ul>
@@ -25,7 +25,7 @@
   <h1>Ajouter des produits à la base de donnée !!!!!! </h1>
   </div>
   
-  <form method="post"  action= "http://e-srvlamp/s141042/ajoutProduit.php"  >
+  <form method="post"  action= "http://e-srvlamp/s141042/ajoutProduit.php" id="page" >
 	<p>Nom produit </p>
    <p><input type="text" name="nomProduit" /></p>
    

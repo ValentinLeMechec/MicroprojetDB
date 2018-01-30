@@ -46,25 +46,18 @@ $nomProduit =  $_POST["nomProduit"];
 $codeItem = $_POST["codeItem"];
 $prixProduit = $_POST["prixProduit"];
 $volume = $_POST["volume"];
-
+}
 
 $Query = "SELECT valeur FROM PROJET1_Devise WHERE nDevise = 'Dollar' ";
 $Result = $Connect->query($Query);
-$prixDollar = $prixProduit * $Query;
+$prixDollar = $prixProduit * $Result;
 echo $prixDollar;
 echo $volume;
 echo $prixProduit;
-echo $nomProduit
-
-//$Query = "INSERT INTO PROJET1_Produit (`nomProduit,sellPriceEuro`,`itemCode`,`volumeProduit` ) VALUES ('$nomProduit','$codeItem','$prixProduit','$volume')";
-//$Result = $Connect->query($Query);
-}
+echo $nomProduit;
 
 
 
-
-$Query = "SELECT * FROM Jeu";
-$Result = $Connect->query($Query);
 
 
 

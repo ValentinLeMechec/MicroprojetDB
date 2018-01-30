@@ -17,13 +17,13 @@
 	
   <ul id="onglets">
 
-    <li><a href="../index.html"> Accueil </a></li>
+    <li><a href="index.html"> Accueil </a></li>
 
-    <li><a class="active" href="client.html"> Client  </a></li>
+    <li><a  href="client.html"> Client  </a></li>
 
     <li><a  href="vendeur.php" > Vendeur</a></li>
 
-    <li><a href=""> Produit </a></li>
+    <li><a href="produit.html"> Produit </a></li>
 	
 	
 </ul>
