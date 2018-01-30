@@ -54,16 +54,21 @@ $prixProduit = $_POST["prixProduit"];
 $volume = $_POST["volume"];
 
 
-$Query = "SELECT valeur FROM PROJET1_Devise WHERE nDevise = 'Dollar' ";
+$Query = "SELECT valeur FROM PROJET1_Devise WHERE nDevise = '1' ";
 $Result = $Connect->query($Query);
-$prixDollar = $prixProduit * $Result;
-echo $prixDollar;
-echo $volume;
-echo $prixProduit;
-echo $nomProduit;
+while($Data = mysqli_fetch_array($Result) ){	
+		echo "</br>";
+		
+		$prixDollar =  $prixProduit * $Data[0];
+		echo $prixDollar;		
+		
+
 }
-//$Query = "INSERT INTO PROJET1_Produit (`nomProduit,sellPriceEuro`,`itemCode`,`volumeProduit` ) VALUES ('$nomProduit','$codeItem','$prixProduit','$volume')";
-//$Result = $Connect->query($Query);
+
+
+}
+$Query = "INSERT INTO PROJET1_Produit (`nomProduit,`sellPriceEuro`,`itemCode`,`volumeProduit` ) VALUES ('$nomProduit','$codeItem','$prixProduit','$volume')";
+$Result = $Connect->query($Query);
 
 
 
