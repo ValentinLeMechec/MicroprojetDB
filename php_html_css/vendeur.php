@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
  <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>Vendeur</title>
   <link rel="stylesheet" href="style.css">
   <script src="javascript/script.js"></script>
 </head>
